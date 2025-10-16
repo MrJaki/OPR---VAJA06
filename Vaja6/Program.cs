@@ -18,6 +18,22 @@ namespace vaja6 {
             stIg++;
         }
 
+        public Igralec(string ime, string geslo)
+        {
+            u_ime = ime;
+            u_geslo = geslo;
+            id = stIg;
+            stIg++;
+        }
+
+        public Igralec(Igralec igr)
+        {
+            u_ime = igr.u_ime;
+            u_geslo = igr.u_geslo;
+            id = stIg;
+            stIg++;
+        }
+
         // Lastnost ID
         public int Id {
             get
